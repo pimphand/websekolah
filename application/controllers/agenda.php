@@ -4,6 +4,10 @@ class Agenda extends CI_Controller{
 		parent::__construct();
 		$this->load->model('m_agenda');
 
+	}function __construct(){
+		parent::__construct();
+		$this->load->model('m_agenda');
+
 	}
 	function index(){
 		$jum=$this->m_agenda->agenda();

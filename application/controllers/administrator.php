@@ -7,6 +7,9 @@ class Administrator extends CI_Controller{
     function index(){
         $this->load->view('admin/v_login');
     }
+    function index(){
+        $this->load->view('admin/v_login');
+    }
     function auth(){
         $username=strip_tags(str_replace("'", "", $this->input->post('username')));
         $password=strip_tags(str_replace("'", "", $this->input->post('password')));
